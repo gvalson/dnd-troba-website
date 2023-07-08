@@ -1,28 +1,23 @@
-<script lang="ts">
- let code: string = "";
- let codeIsRight: boolean = false;
-
- let check = () => {
-     console.log("checking...");
-     codeIsRight = code === "SECRET";
- }
+<script>
+ let code = "";
+ $: codeIsRight = code === "დასაწყისი";
 </script>
 
-<h1>Get enlightened ✨</h1>
+<div class="preamble">
+    <h1>გაცისკროვნდი ✨</h1>
 
-<p>In the land of old, who knows what knowledge might lie untold.</p>
+    <p class="poem">
+	ყველასგან ნავიწყ, დაკარგულ ჟამს<br>
+	უსმინე ახლოს ამ ძველთა თქმას.
+    </p>
 
-<form>
-    <input type="text" bind:value={code}>
-    <input type="submit" on:click={check()}>
-    Dare to take a leap...
-</form>
+    <input type="text" placeholder="გაბედე და გადაეშვი..." bind:value={code}>
 
-<p>
-    codeisRight: {codeisRight}
-</p>
+    {#if codeIsRight}
+	<p>
+	    გილოცავ! შენ მიაგენი საწყის საიდუმლოს! DM-ს უთხარი <b>2625</b> და მოგეცემა 5 ვერცხლი...
+	</p>
+	<!-- <Light {code}> -->
+    {/if}
 
-{#if codeIsRight}
-    <p>You have found the LIGHT!</p>
-    <!-- <Light {code}> -->
-{/if}
+</div>
