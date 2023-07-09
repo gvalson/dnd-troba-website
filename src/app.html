@@ -2,34 +2,46 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png"
-		      />
-		<meta name="viewport" content="width=device-width,
-		initial-scale=1" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet"
+		      href="//cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css">
+		<link rel="stylesheet"
+		      href="//cdn.web-fonts.ge/fonts/bpg-web-001/css/bpg-web-001.min.css">
+		<link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-rioni/css/bpg-rioni.min.css">
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 	<style>
+	  html {
+	      height: 100%;
+	  }
 	  body {
 	      /* background-color: #fce5d1; */
-	      min-height: 100vh;
+	      margin-top: 0;
+	      margin-bottom: 0;
+	      height: 100%;
 	      padding-left: 50px;
 	      padding-right: 50px;
 	      background: linear-gradient(to bottom right,
-					  rgba(252,229,209,1), rgba(255,211,157,1)); 
+					  rgba(252,229,209,1),
+					  rgba(255,211,157,1));
+	      color: rgb(7, 2, 13);
+	      font-family: "BPG Rioni", "sans";
+	      overflow-wrap: break-word;
+	      text-rendering: optimizeLegibility;
+	      font-kerning: normal;
+	  }
+	  h1 {
+	      margin-top: 0;
 	  }
 	  p {
 	      line-height: 1.3em;
 	  }
 	  .poem {
 	      line-height: 1.5em;
-	  }
-	  input {
-	      width: 100%;
-	      height: 40px;
-	      margin: auto;
 	  }
 	  @media screen and (max-width:420px) {
 	      body {

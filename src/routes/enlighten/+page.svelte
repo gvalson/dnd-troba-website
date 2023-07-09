@@ -21,3 +21,12 @@
     {/if}
 
 </div>
+
+
+<style>
+ input {
+     width: 50%;
+     height: 40px;
+     margin: auto;
+ }
+</style>
