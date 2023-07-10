@@ -43,7 +43,7 @@
  .toggle::before {
      height: 40px;
      width: 40px;
-     background-image: url('./hamburger-menu-svgrepo-com.svg');
+     background-image: url('/hamburger-menu-svgrepo-com.svg');
      color: rgb(7, 2, 13);
      background-size: contain;
      content: "";
