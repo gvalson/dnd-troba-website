@@ -14,8 +14,9 @@
      max-width: 50%;
  }
  img {
+     border: double 5px #261302;
      border-radius: 4px;
-     margin-bottom: 5px;
+     margin-bottom: 15px;
  }
  a {
      color: inherit;
