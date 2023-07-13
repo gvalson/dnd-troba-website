@@ -21,6 +21,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tiptap/core": "^2.0.3",
+		"@tiptap/pm": "^2.0.3",
+		"@tiptap/starter-kit": "^2.0.3",
 		"better-sqlite3": "^8.4.0"
 	}
 }

@@ -1,4 +1,5 @@
 <script>
+ import TipTapInput from './TipTapInput.svelte'
  export let data;
  export let form;
 </script>
@@ -13,6 +14,8 @@
 	შენახვა
     </button>
 </form>
+
+<TipTapInput/>
 
 <style>
  form {
