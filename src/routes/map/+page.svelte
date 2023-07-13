@@ -20,7 +20,7 @@
  a {
      color: inherit;
  }
- @media screen and (max-width:420px) {
+ @media screen and (max-width:900px) {
      .map-image {
 	 max-width: 100%;
      }

@@ -51,7 +51,7 @@
      background-repeat: no-repeat;
      cursor: pointer;
  }
- @media screen and (min-width:420px) {
+ @media screen and (min-width:900px) {
      .toggle {
 	 display: none;
      }

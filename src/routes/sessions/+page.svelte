@@ -20,7 +20,7 @@
      border: solid 2px #261302;
      cursor: pointer;
  }
- @media screen and (max-width:420px) {
+ @media screen and (max-width:900px) {
      button {
 	 width: 75%;
      }

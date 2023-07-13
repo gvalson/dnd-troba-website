@@ -24,7 +24,7 @@
 
 <style>
 
- @media screen and (min-width:420px) {
+ @media screen and (min-width:900px) {
      .r {
 	 max-width: 50%;
      }
