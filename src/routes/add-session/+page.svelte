@@ -1,5 +1,6 @@
 <script>
  import TipTapInput from './TipTapInput.svelte'
+ import { editorHtml } from './stores.js'
  export let data;
  export let form;
 </script>
@@ -10,6 +11,7 @@
 
 <form method="POST" action="?/createPost">
     <input name="title" type="text" value=""/>
+    <input name="htmlContent" type="text" hidden value={$editorHtml}/>
     <button type="submit">
 	შენახვა
     </button>

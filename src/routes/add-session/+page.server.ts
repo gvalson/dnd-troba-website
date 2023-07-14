@@ -13,7 +13,7 @@ export const actions: Actions = {
     const date = new Date();
     const dateString = date.toLocaleString('ka-GE')
     const title = data.get('title')?.toString();
-    const htmlContent = "<h4>Added DYNAMICALLY! HELLLOOOOOO!</h4>"
+    const htmlContent = data.get('htmlContent')?.toString();
 
     if (!title) {
       throw error(500);
