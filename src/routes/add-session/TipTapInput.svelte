@@ -23,12 +23,15 @@
 		 levels: [2, 3, 4],
 	     }),
 	 ],
-	 content: '<p>ზონდთა კავშირში ქურდები არიან!</p><p>მოიტაცეს შეშეჩეუნთ!</p>',
+	 content: '<p>დაწერე, რა მოხდა...</p>',
 	 autofocus: true,
 	 injectCss: false,
 	 onTransaction: () => {
 	     // force re-render so `editor.isActive` works as expected
 	     editor = editor
+	 },
+	 onUpdate: ({ editor }) => {
+	    $editorHtml = editor.getHTML()
 	 },
      })
  })
@@ -40,8 +43,6 @@
  })
 
 </script>
-
-<button class="white-b" on:click={() => $editorHtml = editor.getHTML()}>შენახვა store</button>
 
 {#if editor}
     <div id="editorControls">
@@ -76,20 +77,29 @@
 
 <style>
  #editor {
-     background-color: olive;
      width: 50%;
-     padding-left: 15px;
-     padding-right: 15px;
+     padding: 5px;
+     border: double 5px #261302;
+     border-radius: 8px;
+     background-color: #261302;
+     color: #FEF4EC;
+ }
+ #editor:focus-within {
+     background-color: #FEF4EC;
+     color: #261302;
+     transition: 500ms;
  }
  #editorControls {
      display: flex;
      flex-direction: row;
-     justify-content: space-between;
+     gap: 15px;
      padding: 5px;
      border: double 5px #261302;
      border-radius: 8px;
      background-color: #FEF4EC;
      width: 50%;
+     margin-top: 15px;
+     margin-bottom: 5px;
  }
  .control-b {
      padding: 5px;

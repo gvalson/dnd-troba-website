@@ -29,10 +29,18 @@
      border: double 5px #261302;
      border-radius: 8px;
  }
+ .content div {
+     width: 50%;
+ }
  .preamble {
      background: none;
  }
  .htmlContent {
      background: none;
+ }
+ @media screen and (max-width:900px) {
+     .content div {
+	 width: inherit;
+     }
  }
 </style>
