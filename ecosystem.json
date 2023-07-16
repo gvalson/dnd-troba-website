@@ -1,0 +1,11 @@
+{
+    "apps": [{
+	"name": "troba",
+	"script": "./index.js",
+	"cwd": "/var/www/troba",
+	"exec_mode": "fork_mode",
+	"env": {
+	    "DB_PATH": "/var/www/troba/data/database.db"
+	}
+    }]
+}

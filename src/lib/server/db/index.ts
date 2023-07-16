@@ -1,7 +1,10 @@
 import Database from 'better-sqlite3';
 import type { SessionPost } from './types';
+import { env } from '$env/dynamic/private';
 
-const db = new Database('./data/database.db');
+const dbPath = env.DB_PATH ?? './data/database.db';
+
+const db = new Database(dbPath);
 
 export function readPosts(): SessionPost[] {
   const sql = `SELECT rowid,* FROM posts`;

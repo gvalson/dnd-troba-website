@@ -1,6 +1,10 @@
 <script>
  let code = "";
- $: codeIsRight = code === "დასაწყისი";
+ let secretHtml = "";
+ const secrets = new Map();
+ secrets.set("დასაწყისი", `გილოცავ! შენ მიაგენი საწყის საიდუმლოს! DM-ს უთხარი <b>2625</b> და მოგეცემა 5 ვერცხლი...`);
+ secrets.set("მაჩვენე", `<a href="https://excalidraw.com/#room=99a0515a44aa748ed655,H9tv4yGpvWbCds3oX_TiBA">ძალითა შენითა იხილე წარსული შენი...</a>`)
+ $: codeIsRight = secrets.has(code);
 </script>
 
 <div class="preamble">
@@ -14,10 +18,7 @@
     <input type="text" placeholder="გაბედე და გადაეშვი..." bind:value={code}>
 
     {#if codeIsRight}
-	<p>
-	    გილოცავ! შენ მიაგენი საწყის საიდუმლოს! DM-ს უთხარი <b>2625</b> და მოგეცემა 5 ვერცხლი...
-	</p>
-	<!-- <Light {code}> -->
+	<p>{@html secrets.get(code)}</p>
     {/if}
 
 </div>
