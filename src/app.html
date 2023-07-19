@@ -21,9 +21,11 @@
 	      height: 100%;
 	      padding-left: 50px;
 	      padding-right: 50px;
+	      background: rgba(252,229,209,1);
 	      background: linear-gradient(to bottom right,
 					  rgba(252,229,209,1),
 					  rgba(255,211,157,1));
+	      background-attachment: fixed;
 	      color: rgb(7, 2, 13);
 	      font-family: "BPG Rioni", "sans";
 	      overflow-wrap: break-word;
@@ -50,14 +52,19 @@
 	  a {
 	      color: inherit;
 	  }
+	  .content {
+	      width: 50%
+	  }
 	  @media screen and (max-width:900px) {
 	      body {
-		  background: rgb(252,229,209);
 		  padding-left: 25px;
 		  padding-right: 25px;
 	      }
 	      .preamble {
 		  text-align: center;
+	      }
+	      .content {
+		  width: inherit;
 	      }
 	  }
 	</style>

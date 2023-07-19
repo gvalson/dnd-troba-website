@@ -7,6 +7,7 @@
 	<ul>
 	    <li><a href="/">მთავარი გვერდი</a></li>
 	    <li><a href="/characters">პერსონაჟები</a></li>
+	    <li><a href="/lore">ცოდნა</a></li>
 	    <li><a href="/sessions">სესიების ჩანაწერები</a></li>
 	    <li><a href="/map">რუკა</a></li>
 	    <li><a href="/enlighten">?</a></li>
@@ -16,6 +17,7 @@
     <div class="navigation">
 	<a href="/">მთავარი გვერდი</a>
 	<a href="/characters">პერსონაჟები</a>
+	<a href="/lore">ცოდნა</a>
 	<a href="/sessions">სესიების ჩანაწერები</a>
 	<a href="/map">რუკა</a>
 	<a href="/enlighten">?</a>
