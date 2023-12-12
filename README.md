@@ -1,22 +1,26 @@
-# create-svelte
+# [dnd.gvalia.xyz](https://dnd.gvalia.xyz)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A personal website dedicated to a tabletop RPG campaign (in
+Georgian). Best viewed via a mobile device.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- Responsive design: automatically switching the site layout based on
+  the screen size.
+- Statically generated website: most pages are served as-is,
+  making the website feel snappy and saving resources.
+- Gamified reactivity: the framework's ability to swiftly update the
+  DOM is interpreted as an old-school password system for discovering
+  secrets. Go to the "?" page and type "დასაწყისი" for an example.
+- Save session records: players can write down and save what happened
+  on sessions for future reference. This is implemented directly using
+  JS and SQLite, bypassing the need for a complicated REST API to
+  interface with the database.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+First, run `npm install` (or `pnpm install` or `yarn`), then start a
+development server:
 
 ```bash
 npm run dev
@@ -25,14 +29,13 @@ npm run dev
 npm run dev -- --open
 ```
 
+Changes made in the `.svelte` files should be reflected automatically
+in the browser.
+
 ## Building
 
-To create a production version of your app:
+To create a production version of your app run:
 
 ```bash
 npm run build
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
